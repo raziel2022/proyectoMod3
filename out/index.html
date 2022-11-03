@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Búsqueda de información IP</title>
+</script>
+</head>
+<body></body>
+<nav style="width: auto;" class="navHeader">
+  <ul>
+    <li style="color: white"><strong>SEDENA</strong></li>
+    <ul>
+      <li><a id="link" href="#">Consulta</a></li>
+      <li><a id="link" href="#">Plataforma</a></li>
+      <li><a id="link" href="#">Registros</a></li>
+    </ul>
+  </ul>
+ 
+</nav>
+  <main class="container">
+    <Section>
+      <form id="form">
+        <label> 
+          <input required id="input" type="text" placeholder="Introduce aquí la Ip"> <small>Por ejemplo: 201.151.236.178</small>
+        </label>
+        <button class="button2" type="submit" id="submit">Buscar información de esta IP
+        </button>
+      </form>
+    </Section>
+    <section>
+      <div class="div">
+        <table id="table" >
+          <tr>
+            <th id="ip"><strong>IP</strong></th>
+            <th id="lat"><strong>Latitud</strong></th>
+            <th id="long"><strong>Longitud</strong></th>
+            <th id="isp"><strong>ISP</strong></th>
+            <th id="map"><strong>Mapa</strong></th>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section>
+      <button class="button2" id="btn">Ocultar</button>
+      <div class="div" id="results">
+        <pre id="results" style="color: black; background-color: rgb(165, 182, 197);" ></pre>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+  <script type="module" src="./src/index.js"></script>
+  </body>
+</html>
